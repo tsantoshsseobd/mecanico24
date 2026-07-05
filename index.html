@@ -178,7 +178,7 @@ function groupByPlate(vehicles) {
 }
 
 async function callClaude(apiKey, prompt) {
-  const res = await fetch('https://gentle-bonus-128e.tsantoshsse.workers.dev', {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
